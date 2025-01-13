@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import IMG from "../../../assets/image4.jpg"
-import { GoDotFill } from "react-icons/go";
+
 const BodyTeam = () => {
   return (
     <div className="flex flex-col gap-6 lg:flex-row justify-between  bg-[--text-extra] px-6 sm:px-12 lg:px-20 py-10">

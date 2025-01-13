@@ -1,8 +1,5 @@
-import React from 'react'
 
-type Props = {}
-
-const Building = (props: Props) => {
+const Building = () => {
   return (
     <div>Building</div>
   )
