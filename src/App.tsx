@@ -6,10 +6,11 @@ import Team from "./pages/about/team/Team"
 import Back from "./pages/about/Background/Back"
 import Values from "./pages/about/value/Values"
 import Mission from "./pages/about/mission/Mission"
-import Design from "./pages/Project/Design"
-import Building from "./pages/Project/Building"
+import Design from "./pages/Project/Design/Design"
+import Building from "./pages/Project/Building/Building"
 import Gallery from "./pages/gallery/Gallery"
 import Contact from "./pages/contact/Contact"
+import Details from "./pages/Project/Details"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about/team" element={<Team/>}/>
           <Route path="/project/design" element={<Design/>}/>
           <Route path="/project/building" element={<Building/>}/>
+          <Route path="/project/details" element={<Details/>}/>
           <Route path="/gallery" element={<Gallery/>}/>
           <Route path="/contact" element={<Contact/>}/>
          </Routes>  

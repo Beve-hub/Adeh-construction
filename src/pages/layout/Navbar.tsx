@@ -56,7 +56,7 @@ const Navbar = () => {
                                 onMouseEnter={() => handleMouseEnter('about')}
                                 onMouseLeave={handleMouseLeave}
                             >
-                                <NavLink to='/about' className='flex'>About Us <FaSortDown /></NavLink>
+                                <NavLink to='' className='flex'>About Us <FaSortDown /></NavLink>
                                 {dropdown === 'about' && (
                                     <div className='absolute top-6 left-0 bg-gray-100 shadow-lg p-2 w-[150px]'>
                                         <ul className='space-y-2'>

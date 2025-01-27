@@ -26,6 +26,8 @@ const BodyValues = () => {
 
       {/* Write-up Section */}
       <div className="w-full bg-[--text-extra] lg:grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6  lg:mx-5">
+
+         {/* main content Section */}
       <h2 className="text-2xl font-bold border-b-[4px] border-[--bg-color] pb-3">Our Ethical and Professional Commitment</h2>
         <p className="text-justify text-base leading-relaxed mb-1">
         At ACC, we take pride in our strong ethical foundation and commitment to integrity, values deeply rooted in the vision of our founders. We are dedicated to excellence, innovation, and responsibility in all our operations.</p>

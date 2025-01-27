@@ -1,5 +1,5 @@
-import Design from './Design'
-import Building from './Building'
+import Design from './Design/Design'
+import Building from './Building/Building'
 
 
 

@@ -27,6 +27,8 @@ const BodyTeam = () => {
       {/* Write-up Section */}
       <div className="w-full bg-[--text-extra] lg:grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6  lg:mx-5">
       <h2 className="text-2xl font-bold border-b-[4px] border-[--bg-color] pb-3">Management Team</h2>
+
+       {/* main content Section */}
        <div className="flex gap-5">
         <img src={IMG} alt="" className="w-[15rem] h-[15rem] sm:flex hidden"/>
         <p className="text-justify text-base leading-relaxed mb-1">
