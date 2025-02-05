@@ -8,7 +8,7 @@ import Values from "./pages/about/value/Values"
 import Mission from "./pages/about/mission/Mission"
 import Design from "./pages/Project/Design/Design"
 import Building from "./pages/Project/Building/Building"
-import Gallery from "./pages/gallery/Gallery"
+
 import Contact from "./pages/contact/Contact"
 import Details from "./pages/Project/Details"
 
@@ -27,7 +27,6 @@ function App() {
           <Route path="/project/design" element={<Design/>}/>
           <Route path="/project/building" element={<Building/>}/>
           <Route path="/project/details" element={<Details/>}/>
-          <Route path="/gallery" element={<Gallery/>}/>
           <Route path="/contact" element={<Contact/>}/>
          </Routes>  
       </Router>

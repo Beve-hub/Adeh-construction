@@ -49,10 +49,10 @@ const MainDesign = () => {
         <div className="py-16">
           <ol className="space-y-2">
             <li className="flex border-b-[1.5px] py-4 items-center text-sm text-[--text-extra]">
-              <NavLink to="/project/design" className="hover:scale-110">Design Project</NavLink>
+              <NavLink to="/project/design" className="hover:scale-110 font-bold text-[--bg-color]">Design Project</NavLink>
             </li>
             <li className="flex border-b-[1.5px] py-4 items-center text-sm text-[--text-extra]">
-              <NavLink to="/project/building" className="hover:scale-110 font-bold text-[--bg-color]">Building Project</NavLink>
+              <NavLink to="/project/building" className="hover:scale-110 ">Building Project</NavLink>
             </li>
           </ol>
         </div>

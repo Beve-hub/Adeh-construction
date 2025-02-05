@@ -96,9 +96,7 @@ const Navbar = () => {
                                     </div>
                                 )}
                             </li>
-                            <li className='text-[--text-extra] hover:scale-100 cursor-pointer'>
-                                <NavLink to='/gallery'>Gallery</NavLink>
-                            </li>
+                           
                             <li className='text-[--text-extra] hover:scale-100 cursor-pointer'>
                                 <NavLink to='/contact'>Contact</NavLink>
                             </li>
@@ -153,9 +151,6 @@ const Navbar = () => {
                                         </ul>
                                     </div>
                                 )}
-                        </li>
-                        <li className='text-[--text-extra] text-white transition duration-500 hover:scale-110 cursor-pointer'>
-                            <NavLink to='/gallery'>Gallery</NavLink>
                         </li>
                         <li className='text-[--text-extra] text-white transition duration-500 hover:scale-110 cursor-pointer'>
                             <NavLink to='/contact'>Contact</NavLink>
