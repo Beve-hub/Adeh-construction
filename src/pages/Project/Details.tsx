@@ -33,7 +33,7 @@ const Details = () => {
   };
 
   return (
-    <div className="w-full  bg-[--text-extra] flex justify-center items-center mt-16 lg:px-20">
+    <div className="w-full  bg-[--text-extra] flex justify-center items-center mt-24 lg:px-20">
       <div className="grid justify-center items-center  bg-white p-6">
         <div className="my-4">
         <h2 className="font-bold text-2xl mb-2">{selectedCard.title}  </h2>
@@ -51,13 +51,13 @@ const Details = () => {
             <img
             src={selectedCard.image}
             alt=""
-            className="w-[90rem]  h-[30rem] object-cover"
+            className="w-[90rem]  h-[35rem] object-cover"
             />
           </div>
           <div 
           className="w-full md:w-1/5 grid grid-cols-4 sm:grid-cols-3 gap-4 md:flex md:flex-col"
           >
-            {selectedCard.addImage.slice(0,3).map((Image,index) => (
+            {selectedCard.addImage.slice(0,4).map((Image,index) => (
               <img 
               key={index}
               src={Image}
@@ -95,6 +95,7 @@ const Details = () => {
             <button
               onClick={closeModal}
               className="absolute top-4 right-4 text-white bg-gray-800 p-2 rounded-full"
+              aria-label="Close modal"
             >
               <MdCancel size={24} />
             </button>

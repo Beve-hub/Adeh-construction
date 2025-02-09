@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <img
                                     src={Logo}
                                     alt=''
-                                    className='w-[3rem] h-[3rem] hover:scale-105'
+                                    className='w-[100px] hover:scale-105'
                                 />
                             </a>
                         </div>
@@ -77,24 +77,11 @@ const Navbar = () => {
                                     </div>
                                 )}
                             </li>
-                            <li
-                                className='text-[--text-extra] hover:scale-100 cursor-pointer relative'
-                                onMouseEnter={() => handleMouseEnter('project')}
-                                onMouseLeave={handleMouseLeave}
-                            >
-                                <NavLink to='' className='flex'>Project <FaSortDown /></NavLink>
-                                {dropdown === 'project' && (
-                                    <div className='absolute top-6 left-0 bg-gray-100 shadow-lg p-2 w-[150px]'>
-                                        <ul className='space-y-2'>
-                                            <li >
-                                                <NavLink to='/project/design'>Design Projects</NavLink>
-                                            </li>
-                                            <li>
-                                                <NavLink to='/project/building'>Building Projects</NavLink>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                )}
+                            <li className='text-[--text-extra]  hover:scale-100 cursor-pointer'>
+                                <NavLink to='/service'>Service</NavLink>
+                            </li>
+                            <li className='text-[--text-extra] hover:scale-100 cursor-pointer relative' >
+                               <NavLink to='/project/building'>Project</NavLink>
                             </li>
                            
                             <li className='text-[--text-extra] hover:scale-100 cursor-pointer'>
@@ -133,6 +120,9 @@ const Navbar = () => {
                                     </div>
                                 )}
                         </li>
+                        <li className='text-[--text-extra]  hover:scale-100 cursor-pointer'>
+                                <NavLink to='/service'>Service</NavLink>
+                            </li>
                         <li 
                         className='text-[--text-extra] text-white transition duration-500 hover:scale-110 cursor-pointer'
                         onMouseEnter={() => handleMouseEnter('project')}

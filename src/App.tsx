@@ -8,9 +8,9 @@ import Values from "./pages/about/value/Values"
 import Mission from "./pages/about/mission/Mission"
 import Design from "./pages/Project/Design/Design"
 import Building from "./pages/Project/Building/Building"
-
 import Contact from "./pages/contact/Contact"
 import Details from "./pages/Project/Details"
+import Service from './pages/service/Service';
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path="/about/values" element={<Values/>}/>
           <Route path="/about/mission" element={<Mission/>}/>
           <Route path="/about/team" element={<Team/>}/>
+          <Route path="/service" element={<Service/>}/>
           <Route path="/project/design" element={<Design/>}/>
           <Route path="/project/building" element={<Building/>}/>
           <Route path="/project/details" element={<Details/>}/>

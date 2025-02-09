@@ -1,88 +1,106 @@
-import React from "react";
-import { MdAddIcCall } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
-
-const BodyContact: React.FC = () => {
+import { MdOutlineEmail, MdWhatsapp } from "react-icons/md";
+import { TbWorld } from "react-icons/tb";
+const BodyContact = () => {
   return (
-    <div className="bg-[--text-extra] flex flex-col gap-6 lg:flex-row justify-between px-6 sm:px-12 lg:px-20 py-10">
-      <div>
-        <p className="text-3xl">Send a message</p>
-        <form>
-          <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div className="sm:col-span-3">
-              <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">
+    <section className="bg-[--text-extra] grid  lg:grid-cols-2 justify-between sm:px-6 py-8 lg:py-10 ">
+      {/* Contact Information */}
+      <div className="space-y-8 px-8">
+        <p className="text-2xl sm:text-3xl font-semibold">How to reach us</p>
+        <p className="text-gray-700">
+          Block H3F, Ist Floor Sterling Towers Marina Lagos Nigeria
+        </p>
+        <div className="flex items-center gap-2 mt-4">
+        <MdWhatsapp size={24} className="text-[--bg-color]" />
+          
+         <div className="flex gap-2">
+          <p className="text-gray-900 font-medium border-r-2 border-[--text-color] pr-4">+234 8074 668 779</p>
+          <p className="text-gray-900 font-medium border-r-2 border-[--text-color] pr-4">+234 8068 210 791</p>
+          <p className="text-gray-900 font-medium ">+234 9074 781 256</p>
+          </div>
+         
+        </div>
+        <div className="flex items-center gap-2 mt-4">
+          <MdOutlineEmail size={24} className="text-[--bg-color]" />
+          <p className="text-gray-900 font-medium">adehconstructioncompany@gmail.com</p>
+        </div>
+        <div className="flex items-center gap-2 mt-4">
+          <TbWorld size={24} className="text-[--bg-color]" />
+          <p className="text-gray-900 font-medium">www.adehconstructioncompany.com</p>
+        </div>
+      </div>
+
+      {/* Contact Form */}
+      <div className="bg-white p-6 rounded-lg shadow">
+        <p className="text-2xl sm:text-3xl font-semibold">Send a message</p>
+        <form className="mt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* First Name */}
+            <div>
+              <label htmlFor="firstName" className="block text-sm font-medium text-gray-900">
                 First Name
               </label>
-              <div className="mt-2">
-                <input
-                  type="text"
-                  name="firstName"
-                  id="firstName"
-                  autoComplete="given-name"
-                  className="border-b block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                />
-              </div>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Enter your first name"
+                className="mt-2 block w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
             </div>
 
-            <div className="sm:col-span-3">
-              <label htmlFor="last-name" className="block text-sm/6 font-medium text-gray-900">
+            {/* Email */}
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-900">
                 Email
               </label>
-              <div className="mt-2">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"                  
-                  className="border-b block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="sm:col-span-4 mt-4">
-            <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
-              Phone Number
-            </label>
-            <div className="mt-2">
               <input
-                id="number"
-                name="number"
-                type="number"
-                className="border-b block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                className="mt-2 block w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
               />
             </div>
           </div>
-          <div className="col-span-full mt-4">
-            <label htmlFor="about" className="block text-sm/6 font-medium text-gray-900">
+
+          {/* Phone Number */}
+          <div className="mt-4">
+            <label htmlFor="number" className="block text-sm font-medium text-gray-900">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              name="number"
+              id="number"
+              placeholder="Enter your phone number"
+              className="mt-2 block w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          </div>
+
+          {/* Message */}
+          <div className="mt-4">
+            <label htmlFor="message" className="block text-sm font-medium text-gray-900">
               Message
             </label>
-            <div className="mt-2">
-           
-              <textarea
-                name="about"
-                id="about"
-                placeholder="Write a few sentences about yourself."
-                rows={3}
-                className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 text-sm focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 border-b"
-              ></textarea>
-            </div>            
+            <textarea
+              name="message"
+              id="message"
+              rows={4}
+              placeholder="Write your message here..."
+              className="mt-2 block w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+            ></textarea>
           </div>
-          <button className="mt-2 bg-[--bg-color] text-[--text-extra]">Submit</button>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="mt-6 w-full bg-[--bg-color] text-white py-2 px-4 rounded-md hover:bg-indigo-500 transition"
+          >
+            Submit
+          </button>
         </form>
       </div>
-      <div>
-        <p className="text-3xl">How to reach us</p>
-        <p>Block H3F, Ist Floor Sterling Towers
-        Marina Lagos Nigeria</p>
-        <div className="flex item-center text-center gap-2 mt-4">
-          <p><MdAddIcCall size={24}/></p>
-          <p>+234 9066 037 029</p>
-        </div>
-        <div className="flex item-center text-center gap-2 mt-4">
-          <p><MdEmail size={24}/></p>
-          <p>+234 9066 037 029</p>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

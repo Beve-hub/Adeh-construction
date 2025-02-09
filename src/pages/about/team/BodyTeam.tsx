@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import IMG from "../../../assets/image4.jpg"
+import IMG from "../../../assets/CEO.jpg"
 
 const BodyTeam = () => {
   return (
@@ -32,7 +32,8 @@ const BodyTeam = () => {
        <div className="flex gap-5">
         <img src={IMG} alt="" className="w-[15rem] h-[15rem] sm:flex hidden"/>
         <p className="text-justify text-base leading-relaxed mb-1">
-          Poto is a visionary leader with extensive experience and a passion for excellence. Under [his/her/their] guidance, the company has achieved significant growth and consistently delivered exceptional results. [Name] fosters a culture of collaboration, empowering our skilled team of Civil Engineers, Quantity Surveyors, Site Engineers, Supervisors, and technicians to work seamlessly and achieve project success with precision and professionalism.
+          Mr. Sunday Adeh is a visionary leader with extensive experience and a passion for excellence.
+           Under his guidance, the company has achieved significant growth and consistently delivered exceptional results. [Name] fosters a culture of collaboration, empowering our skilled team of Civil Engineers, Quantity Surveyors, Site Engineers, Supervisors, and technicians to work seamlessly and achieve project success with precision and professionalism.
          </p>
        </div>
         <p className="text-justify text-base leading-relaxed mb-1">

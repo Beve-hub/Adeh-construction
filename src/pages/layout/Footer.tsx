@@ -8,7 +8,7 @@ const Footer = () => {
      
 
         <div className=' mx-auto w-screen flex justify-center items-center gap-6 mt-10'>
-        <img src={mail} alt=''  className='w-[22px] flex'/>
+        <img src={mail} alt=''  className='w-[100px] flex'/>
         <p className='text-center text-xl font-medium'>Adeh construction company</p>
         </div>
   

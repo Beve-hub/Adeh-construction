@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <section className="mt-20 py-16 px-4 sm:px-6 lg:px-15">
+    <section className="mt-40 py-16 px-4 sm:px-6 lg:px-15">
       <div className="max-w-[50rem] mx-auto text-center lg:text-left">
         <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-7xl">
           Building Excellence, One Project at a Time.
@@ -19,7 +19,7 @@ const Hero = () => {
             Learn More
           </a>
           <a
-            href="#services"
+            href="/src/pages/Project/"
             className="inline-block border border-white text-white px-6 py-3 text-sm font-medium rounded-md shadow hover:bg-white hover:text-[--hover-color] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             View Our Services

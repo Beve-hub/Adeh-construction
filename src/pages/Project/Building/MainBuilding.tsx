@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { BuildingData } from "../../utils/contentData";
 import { useState } from "react";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
@@ -45,25 +45,12 @@ const MainBuilding = () => {
 
   return (
     <div className="flex flex-col gap-6 lg:flex-row justify-between bg-[--text-extra] px-6 sm:px-12 lg:px-20 py-10">
-      {/* Navigation Section */}
-      <div className="w-full bg-[--layer-colo] lg:w-1/2 h-[25rem] px-4 lg:px-8 sm:grid hidden">
-        <div className="py-16">
-          <ol className="space-y-2">
-            <li className="flex border-b-[1.5px] py-4 items-center text-sm text-[--text-extra]">
-              <NavLink to="/project/design" className="hover:scale-110">Design Project</NavLink>
-            </li>
-            <li className="flex border-b-[1.5px] py-4 items-center text-sm text-[--text-extra]">
-              <NavLink to="/project/building" className="hover:scale-110 font-bold text-[--bg-color]">Building Project</NavLink>
-            </li>
-          </ol>
-        </div>
-      </div>
-
+     
       {/* Write-up Section */}
       <div className="w-full bg-[--text-extra] lg:grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 lg:mx-5">
-        <h2 className="text-2xl font-bold border-b-[4px] border-[--bg-color] pb-3">Latest Building Project</h2>
+        <h2 className="text-4xl font-bold border-b-[4px] border-[--bg-color] pb-4">Latest Building Project</h2>
 
-        <div className="grid mt-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid mt-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {showItems.map((item, index) => (
             <div
               key={index}
@@ -87,6 +74,7 @@ const MainBuilding = () => {
           <button
             onClick={() => handlerPerChange("prev")}
             disabled={currentPage === 1}
+            aria-label="Previous Page"
             className="px-4 py-2 bg-[--bg-color] rounded hover:bg-gray-400 disabled:opacity-50"
           >
             <IoChevronBack color="#fff" />
@@ -94,6 +82,7 @@ const MainBuilding = () => {
           <button
             onClick={() => handlerPerChange("next")}
             disabled={currentPage === totalPages}
+            aria-label="Forward Page"
             className="px-4 py-2 bg-[--bg-color] rounded disabled:opacity-50"
           >
             <IoChevronForward color="#fff" />
