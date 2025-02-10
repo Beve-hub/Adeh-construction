@@ -23,6 +23,7 @@
   --base-color: #750037;
   --bases-color: #75003780;
   --base-colors: #75003730;
+  --logo-text: #009ff5
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -52,6 +53,7 @@ body {
   background-repeat: no-repeat; /* Prevents tiling of the image */
   background-attachment: fixed; /* Makes the image stay fixed during scrolling */
   background-position: center; /* Centers the image */
+  overflow-x: hidden;
 }
 
 
@@ -77,6 +79,20 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.nav-link {
+  color: var(--hover-color);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--bg-color);
+}
+
+.nav-link.active {
+  color: var(--button-color); /* Active link color */
+  font-weight: bold;
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,7 +1,8 @@
-import IMG1 from "../../assets/image2.jpg";
-import IMG3 from "../../assets/image3.jpg";
-import IMG4 from "../../assets/image4.jpg";
-import IMG5 from "../../assets/image5.jpg";
+import IMG1 from "../../assets/const.jpg";
+import IMG2 from "../../assets/drawing2.jpeg";
+import IMG3 from "../../assets/estatemanage.jpg";
+import IMG4 from "../../assets/consultant.jpg";
+import IMG5 from "../../assets/mnagement.jpeg";
 
 const BodySer = () => {
     return (
@@ -24,7 +25,7 @@ const BodySer = () => {
             </div>
             <div className="grid gap-6 md:grid-cols-2 items-center">
                 {/* Image container with full responsiveness */}
-                <img src={IMG3} alt="Civil Engineering" className="object-cover w-full h-full " />
+                <img src={IMG2} alt="Civil Engineering" className="object-cover w-full h-full " />
 
 
                 {/* Text container with improved responsiveness */}
