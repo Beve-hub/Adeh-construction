@@ -11,19 +11,19 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  --text-extra:#ffff;
-  --text-color:#121212;
+  --text-extra: #ffff;
+  --text-color: #121212;
   --bg-color: #003e62;
   --button-color: #FFC700;
   --hover-color: #003e62;
   --layer-color: #F6F6F6;
-  --layer-colo: #989898;
-  --layers-colo: #cacaca;  
+  --layer-alt-color: #989898; /* Fixed variable name */
+  --layer-secondary-color: #cacaca;  
   --tetra-color: #90f7d8;
   --base-color: #750037;
   --bases-color: #75003780;
   --base-colors: #75003730;
-  --logo-text: #009ff5
+  --logo-text: #009ff5; /* Missing semicolon fixed */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -34,28 +34,30 @@
 a {
   font-weight: 400;
   color: var(--text-color);
-  text-decoration:  var(--text-color);
- 
+  text-decoration: none; /* Fixed */
 }
+
 a:hover {
-  color:  var( --bg-color);
+  color: var(--bg-color);
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0;  
   display: flex;
-  place-items: center;  
-  min-height: 100vh;
-   background-color: antiquewhite;
-   background-image: url('../src/assets/image1.jpg'); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents tiling of the image */
-  background-attachment: fixed; /* Makes the image stay fixed during scrolling */
-  background-position: center; /* Centers the image */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  background-image: url('../src/assets/image1.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   overflow-x: hidden;
+  
 }
-
 
 h1 {
   font-size: 3.2em;
@@ -73,9 +75,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color:  var(--bg-color);
+  border-color: var(--bg-color);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -91,7 +95,7 @@ button:focus-visible {
 }
 
 .nav-link.active {
-  color: var(--button-color); /* Active link color */
+  color: var(--button-color);
   font-weight: bold;
 }
 
@@ -101,7 +105,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: var( --bg-color);
+    color: var(--bg-color);
   }
   button {
     background-color: #f9f9f9;

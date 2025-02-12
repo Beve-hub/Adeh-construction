@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar/>
+      <Navbar/>
          <Routes>
           <Route index element={<Home/>}/>
           <Route path="/about/background" element={<Back/>}/>
