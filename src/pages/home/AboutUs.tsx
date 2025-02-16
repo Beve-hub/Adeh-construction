@@ -12,7 +12,7 @@ const AboutUs = () => {
           We are a client-focused, service-oriented General Engineering and Construction Company established in Lagos.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between items-center bg-[--layer-colo] px-6 sm:px-12 lg:px-20 py-10">
+      <div className="flex flex-col lg:flex-row justify-between items-center bg-[--layer-alt-color] px-6 sm:px-12 lg:px-20 py-10">
         <div className="w-full lg:w-1/2 px-4 lg:px-8">
           <div className="border-b-[4px] border-[--bg-color] py-2 mb-5">
             <p className="font-medium text-[--layers-colo]">The Company</p>

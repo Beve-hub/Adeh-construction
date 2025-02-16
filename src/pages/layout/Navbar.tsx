@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
 import menu from '../../assets/menu.svg';
 import cancel from '../../assets/cancel.svg';
-import Logo from '../../';
+import Logo from '../../assets/logo22.png';
 import { FaSortDown } from "react-icons/fa";
 
 const Navbar = () => {
@@ -32,9 +32,10 @@ const Navbar = () => {
                                 <img src={menu} alt='Open Menu' className='bg-[#fff] p-1' />
                             )}
                         </div>
+                        
                         <div className='pl-4 md:pl-8'>
                             <NavLink to='/'>
-                                <img src={Logo} alt='Logo' className='w-[200px] hover:scale-105' />
+                                <img src={Logo} alt='Logo' className='w-[100px] hover:scale-105' />
                             </NavLink>
                         </div>
                     </div>
