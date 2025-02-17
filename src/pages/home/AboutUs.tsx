@@ -1,7 +1,7 @@
 import { GoDotFill } from "react-icons/go";
-import IMG from "../../assets/image6.jpg";
-import IMG2 from "../../assets/image7.jpg";
-import IMG3 from "../../assets/image8.jpg";
+import IMG from "../../assets/image7.jpg";
+import IMG2 from "../../assets/drawing.jpg";
+import IMG3 from "../../assets/consultant.jpg";
 
 
 const AboutUs = () => {
@@ -33,55 +33,63 @@ const AboutUs = () => {
                 "Joint Venture Projects",
                 "Testing, Quality Control & Improvements",
               ].map((item, index) => (
-                <li key={index} className="flex items-center text-sm text-[--text-extra]">
-                  <GoDotFill  size={15} className="self-center mr-2" />
-                  {item}
-                </li>
+                <li key={index} className="flex items-center text-sm text-[var(--text-extra)]">
+                <GoDotFill color="var(--bg-color)" size={15} className="self-center mr-2" />
+                {item}
+              </li>
               ))}
             </ol>
           </div>
         </div>
         <div className="w-full lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 lg:mt-0">
-        <div  className="text-start">
-              <img
-                src={IMG}
-                alt=""
-                className="w-full h-[18rem] object-cover hover:scale-105 transition-transform duration-300"
-              />
-              <div className="my-3">
-                <p className="font-bold text-[--text-extra]">Redefining Infrastructure</p>
-                <p className="text-sm text-[--text-extra]">
-                  The company has a pedigree of developing more than 150 Ha of property across varied geographies and soil conditions.
-                </p>
-              </div>
-        </div>
-        <div  className="text-start">
-              <img
-                src={IMG2}
-                alt=""
-                className="w-full h-[18rem] object-cover hover:scale-105 transition-transform duration-300"
-              />
-              <div className="my-3">
-                <p className="font-bold text-[--text-extra]">Redefining Infrastructure</p>
-                <p className="text-sm text-[--text-extra]">
-                  The company has a pedigree of developing more than 150 Ha of property across varied geographies and soil conditions.
-                </p>
-              </div>
-        </div>
-        <div  className="text-start">
-              <img
-                src={IMG3}
-                alt=""
-                className="w-full h-[18rem] object-cover hover:scale-105 transition-transform duration-300"
-              />
-              <div className="my-3">
-                <p className="font-bold text-[--text-extra]">Redefining Infrastructure</p>
-                <p className="text-sm text-[--text-extra]">
-                  The company has a pedigree of developing more than 150 Ha of property across varied geographies and soil conditions.
-                </p>
-              </div>
-        </div>     
-        </div>
+  {/* Card 1 */}
+  <div className="text-start relative overflow-hidden group hover:shadow-lg p-2 transition-all duration-300">
+    <div className="absolute inset-0 bg-[--bg-color] opacity-0 group-hover:opacity-20 transition-opacity duration-300"> </div>
+    <img
+      src={IMG}
+      alt=""
+      className="w-full h-[16rem] object-cover hover:scale-105 transition-transform duration-300 z-10 relative"
+    />
+    <div className="my-3 relative z-10">
+      <p className="font-bold text-[--text-extra]">Building Construction</p>
+      <p className="text-sm text-[--text-extra]">
+      We build spaces where dreams thrive, blending innovation and expertise to create lasting structures that inspire generations.
+      </p>
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="text-start relative overflow-hidden group hover:shadow-lg p-2 transition-all duration-300">
+    <div className="absolute inset-0 bg-[--hover-color] opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+    <img
+      src={IMG2}
+      alt=""
+      className="w-full h-[16rem] object-cover hover:scale-105 transition-transform duration-300 z-10 relative"
+    />
+    <div className="my-3 relative z-10">
+      <p className="font-bold text-[--text-extra]">Building Drawing</p>
+      <p className="text-sm text-[--text-extra]">
+      Combining seasoned expertise with innovative design solutions, we deliver precise, customized architectural plans that transform client visions into achievable blueprints.
+      </p>
+    </div>
+  </div>
+
+  {/* Card 3 */}
+  <div className="text-start relative overflow-hidden group hover:shadow-lg p-2 transition-all duration-300">
+    <div className="absolute inset-0 bg-[--hover-color] opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+    <img
+      src={IMG3}
+      alt=""
+      className="w-full h-[16rem] object-cover hover:scale-105 transition-transform duration-300 z-10 relative"
+    />
+    <div className="my-3 relative z-10">
+      <p className="font-bold text-[--text-extra]">Project Management</p>
+      <p className="text-sm text-[--text-extra]">
+      Efficiency and excellence from start to finish, keeping projects on track and teams aligned with precision and passion. 
+      </p>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   );

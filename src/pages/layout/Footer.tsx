@@ -29,16 +29,16 @@ const Footer = () => {
               </div>
  {/* Quick Links */}
 <div className="flex flex-col items-center md:flex-1 mt-4 md:mt-0">
-  <h2 className="font-semibold text-xl mb-2">Quick Links</h2>
-  <p className="text-gray-700 border-[--text-color] text-center"><a href='/about/background'>About</a></p>
-  <p className="text-gray-700 border-[--text-color] text-center"><a href='/service'>Service</a></p>
-  <p className="text-gray-700 border-[--text-color] text-center"><a href='/project/building'>Project</a></p>
+  <h2 className="font-semibold text-xl mb-4">Quick Links</h2>
+  <p className="text-gray-700 border-[--text-color] text-center mb-2"><a href='/about/background'>About</a></p>
+  <p className="text-gray-700 border-[--text-color] text-center mb-2"><a href='/service'>Service</a></p>
+  <p className="text-gray-700 border-[--text-color] text-center mb-2"><a href='/project/building'>Project</a></p>
   <p className="text-gray-700 border-[--text-color] text-center"><a href='/contact'>Contact</a></p>
 </div>
                {/* Contact Info */}
                <div className="flex flex-col items-center md:items-start md:flex-1 mt-4 md:mt-0">
-                <h2 className="font-semibold text-xl mb-2">Office Contact</h2>
-                        <div className="flex items-center gap-2 mb-2">
+                <h2 className="font-semibold text-xl mb-4">Office </h2>
+                        <div className="flex items-center gap-2 mb-4">
                             <MdWhatsapp size={18} className="text-[--bg-color]" />
                             <div className="flex flex-wrap gap-2">
                                 <p className="border-r pr-2 text-gray-700 text-md border-[--text-color]">+234 8074 668 779</p>
@@ -47,7 +47,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center gap-2 mb-2">
+                        <div className="flex items-center gap-2 mb-4">
                             <MdOutlineEmail size={18} className="text-[--bg-color]" />
                             <p className="text-gray-700 text-md">adehconstructioncompany@gmail.com</p>
                         </div>

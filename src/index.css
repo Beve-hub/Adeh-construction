@@ -17,7 +17,7 @@
   --button-color: #FFC700;
   --hover-color: #003e62;
   --layer-color: #F6F6F6;
-  --layer-alt-color: #989898; /* Fixed variable name */
+  --layer-alt-color: #6d6d6d; /* Fixed variable name */
   --layer-secondary-color: #cacaca;  
   --tetra-color: #90f7d8;
   --base-color: #750037;
@@ -33,12 +33,13 @@
 
 a {
   font-weight: 400;
-  color: var(--text-color);
   text-decoration: none; /* Fixed */
 }
 
 a:hover {
-  color: var(--bg-color);
+  color: var(--base-color);
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--button-color);
 }
 
 body {
