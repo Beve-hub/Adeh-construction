@@ -5,11 +5,11 @@ import TopContact from "./TopContact"
 
 const Contact = () => {
   return (
-    <div>
+    <>
       <TopContact/>
       <BodyContact/>
       <DownContact/>
-    </div>
+    </>
   )
 }
 

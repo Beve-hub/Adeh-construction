@@ -8,9 +8,9 @@ import Values from "./pages/about/value/Values"
 import Mission from "./pages/about/mission/Mission"
 import Design from "./pages/Project/Design/Design"
 import Building from "./pages/Project/Building/Building"
-import Contact from "./pages/contact/Contact"
 import Details from "./pages/Project/Details"
 import Service from './pages/service/Service';
+import Location from "./pages/locate/Location"
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Router>
       <Navbar/>
          <Routes>
-          <Route index element={<Home/>}/>
+          <Route index element={<Home/>}/>          
           <Route path="/about/background" element={<Back/>}/>
           <Route path="/about/values" element={<Values/>}/>
           <Route path="/about/mission" element={<Mission/>}/>
@@ -28,7 +28,8 @@ function App() {
           <Route path="/project/design" element={<Design/>}/>
           <Route path="/project/building" element={<Building/>}/>
           <Route path="/project/details" element={<Details/>}/>
-          <Route path="/contacts" element={<Contact/>}/>
+          <Route path="/service" element={<Service/>}/>
+          <Route path="/location" element={<Location/>} />
          </Routes>  
       </Router>
       <Footer/>

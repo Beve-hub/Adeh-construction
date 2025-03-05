@@ -6,7 +6,7 @@ const BodyMission = () => {
   return (
     <div className="flex flex-col gap-6 lg:flex-row justify-between  bg-[--text-extra] px-6 sm:px-12 lg:px-20 py-10">
       {/* Navigation Section */}
-      <div className="w-full bg-[--layer-colo] lg:w-1/2 h-[25rem] px-4 lg:px-8 sm:grid hidden">
+      <div className="w-full bg-[--layer-alt] lg:w-1/2 h-[25rem] px-4 lg:px-8 sm:grid hidden">
         <div className="py-16">
           <ol className="space-y-2">
             <li className="flex border-b-[1.5px] py-4 items-center text-sm text-[--text-extra] ">

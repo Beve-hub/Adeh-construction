@@ -3,6 +3,8 @@ interface NavbarItem {
     path: string;
  }
 
+
+
  export const NavData: NavbarItem[] = [
     {
        name: 'Home',
@@ -25,3 +27,4 @@ interface NavbarItem {
        path: '/contact',
     },
    ]
+

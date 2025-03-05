@@ -4,10 +4,10 @@ const Hero = () => {
   return (
     <section className="mt-60 py-16 px-4 sm:px-6 lg:px-15">
       <div className="max-w-[60rem] mx-auto text-center lg:text-left">
-        <h1 className="text-white font-bold sm:text-4xl lg:text-4xl">
+        <h1 className="max-w-[25rem] text-white font-bold sm:text-4xl lg:text-4xl">
           Building Excellence, One Project at a Time.
         </h1>
-        <p className="mt-6 text-white text-base sm:text-lg ">
+        <p className="max-w-[35rem] mt-6 text-white text-base sm:text-lg ">
           Building living & working spaces for future generations. We focus on blending our international expertise with local architecture to provide sustainable & cost-effective solutions.
         </p>
         
