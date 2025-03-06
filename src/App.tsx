@@ -11,6 +11,7 @@ import Building from "./pages/Project/Building/Building"
 import Details from "./pages/Project/Details"
 import Service from './pages/service/Service';
 import Location from "./pages/locate/Location"
+import Admin from "./pages/admin/Admin"
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/project/details" element={<Details/>}/>
           <Route path="/service" element={<Service/>}/>
           <Route path="/location" element={<Location/>} />
+          <Route path="/admin" element={<Admin/>}/>
          </Routes>  
       </Router>
       <Footer/>

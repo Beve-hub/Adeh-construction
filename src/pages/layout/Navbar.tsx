@@ -6,6 +6,7 @@ import Logo from '../../assets/logo23.png';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { RiSearch2Line } from "react-icons/ri";
 
+
 const navLinks = [
     { name: "Home", path: "/" },
     {
@@ -21,6 +22,7 @@ const navLinks = [
     { name: "Service", path: "/service" },
     { name: "Project", path: "/project/building" },
     { name: "Contact", path: "/location" },
+    { name: "Admin", path: "/admin" }
 ];
 
 const Navbar = () => {
@@ -38,7 +40,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className=" flex items-center justify-between fixed top-0 z-30 w-full bg-[--text-extra] shadow-md">
+        <div className=" flex items-center justify-between fixed top-0 left-0 right-0 z-50 w-screen bg-[--text-extra] shadow-md">
             <div className='container mx-auto px-4 md:px-8 lg:px-16 py-2'>
                 <div className='flex justify-between items-end mb-4'>    
                     {/* Logo and Hamburger */}            
